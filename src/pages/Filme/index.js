@@ -32,11 +32,12 @@ function Filme(){
 
         loadFilme();
 
-        return() => {
-            console.log("COMPONENTE FOI DESMONTADO");
-            navigate("/", { replace: true });
-            return;
-        }
+        // ESTAVA FAZENDO COM QUE A PÁGINA "FAVORITOS" NÃO CARREGASSE
+        // return() => {
+        //     console.log("COMPONENTE FOI DESMONTADO");
+        //     navigate("/", { replace: true });
+        //     return;
+        // }
     }, [navigate, id])
 
     function salvarFilme(){
